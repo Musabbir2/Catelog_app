@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_android/home_page.dart';
 
 void main(){
   runApp(FirstApp());
@@ -6,18 +7,13 @@ void main(){
 
 
 class FirstApp extends StatelessWidget {
-  const FirstApp({Key? key}) : super(key: key);
+  // const FirstApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
-     home: Material(
-      child:Center(
-        child: Container(
-          child: Text("Musabbir is creating his own"),
-        ),
-      ),
-     ),
+     home: HomePage(),
     );
   }
 }
