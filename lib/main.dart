@@ -15,7 +15,7 @@ class FirstApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
@@ -25,7 +25,7 @@ class FirstApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
     ),
-      initialRoute: "/",
+      initialRoute: MyRoutes.homeRoute,
       routes: {
        '/': (context) =>  LoginPage(),
        MyRoutes.homeRoute: (context) => HomePage(),
